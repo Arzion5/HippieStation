@@ -3,7 +3,7 @@
 	surplus = 0
 	exclude_modes = list(/datum/game_mode/nuclear)
 	cant_discount = TRUE
-	
+
 /* Stimpak */
 /datum/uplink_item/stealthy_tools/stimpack
 	name = "Syndicate Nano-Booster"
@@ -240,13 +240,29 @@
 
 /datum/uplink_item/dangerous/guardian
 	player_minimum = 0
-	
+
 /datum/uplink_item/colab/romerol_kit
 	name = "Romerol"
 	desc = "A highly experimental bioterror agent which creates dormant nodules to be etched into the grey matter of the brain. On death, these nodules take control of the dead body, causing limited revivification, along with slurred speech, aggression, and the ability to infect others with this agent."
 	item = /obj/item/storage/box/syndie_kit/romerol
 	cost = 25
 	surplus = 5
-	
+
 /datum/uplink_item/stealthy_weapons/romerol_kit
 	exclude_modes = list(/datum/game_mode/nuclear, /datum/game_mode/traitor)
+
+/datum/uplink_item/badass/bear
+	name = "Instant Bear"
+	desc = "Exactly what it says. It instantly teleports in an angry bear that is hostile to both you and everyone else. Best used while being chased."
+	item = /mob/living/simple_animal/hostile/bear
+	cost = 1 //Regular bears have 60 health.
+	surplus = 2 //RNG hates you. I hope this won't break traitor cargo
+	exclude_modes = list(/datum/game_mode/nuclear)
+
+/datum/uplink_item/badass/combatbear
+	name = "Instant Combat Bear"
+	desc = "Exactly what it says. It instantly teleports in an angry combat bear that is hostile to both you and everyone else. Best used while being chased, but you want whoever is chasing you dead."
+	item = /mob/living/simple_animal/hostile/bear/russian
+	cost = 2 //Combat bears have 120 health
+	surplus = 1 //You fail at life
+	exclude_modes = list(/datum/game_mode/nuclear)
