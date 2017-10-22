@@ -308,6 +308,12 @@ F
 	cost = 6
 	limit = 1
 
+/datum/spellbook_entry/item/gun
+	name = "Stetchkin Gun"
+	desc = "'The answer? Use a gun.'"
+	item_path = /obj/item/gun/ballistic/automatic/pistol
+	cost = 1 //'And if that don't work? Use more gun.'
+
 /datum/spellbook_entry/item/staffofrevenant
 	name = "Staff of Revenant"
 	desc = "A weak staff that can drain the souls of the dead to become far more powerful than anything you can lay your hands on. Activate in your hand to view your progress, stats and if possible, progress to the next stage."
