@@ -29,3 +29,11 @@
 		visible_message("<span class='greenannounce'>[user] has scored a critical hit on [M]!</span>")
 		playsound(src, 'sound/arcade/mana.ogg', 50, 1)
 	..()
+
+/obj/item/banhammer/syndicate
+	desc = "A banhammer. Upon closer inspection, it appears to have a tag around its handle."
+	icon_state = "toyhammertagged"
+	icon = 'hippiestation/icons/obj/items_and_weapons.dmi"
+	throwforce = 20
+	force = 20
+	armour_penetration = 100
