@@ -38,9 +38,10 @@
 	lefthand_file = "hippiestation/icons/mob/inhands/lefthand"
 	righthand_file = "hippiestation/icons/mob/inhands/righthand"
 	force = 40
+	armour_penetration = 100 //Able to crit a fully-healthed person in 3 hits
 	throw_speed = 3
 	throw_range = 14
-	throwforce = 180//What the fuck?
+	throwforce = 180 //What the fuck?
 	w_class = WEIGHT_CLASS_HUGE
 	flags_1 = ABSTRACT_1 | NODROP_1 | DROPDEL_1
 	HITSOUND = 'sound/magic/clockwork/ratvar_attack.ogg'
